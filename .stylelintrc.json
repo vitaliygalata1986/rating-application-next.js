@@ -1,0 +1,23 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "rules",
+      "at-rules"
+    ],
+    "order/properties-order": ["position", "top", "right", "bottom", "left"],
+    "color-hex-length": "long"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.scss"],
+      "rules": {
+        "scss/indentation": 2
+      }
+    }
+  ]
+}

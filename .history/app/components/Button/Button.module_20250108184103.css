@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.pr
+
+.gost {
+  color: var(--gray);
+  border: 1px solid var(--gray-light);
+  background: none;
+}

@@ -1,0 +1,66 @@
+/*
+Это псевдокласс, представляющий корневой элемент документа (html), 
+используемый для задания глобальных CSS-переменных.
+*/
+
+:root {
+  --background: #f5f6f8;
+  --black: #171717;
+  --white: #ffffff;
+  --primary: #7653fc;
+  --primary-hover: #63;
+  --red: #fc836d;
+  --green: #1dc37e;
+  --gray-light: #ebebeb;
+  --gray: #3b434e;
+  --green-light: #c8f8e4;
+}
+
+/*
+Это медиазапрос, который проверяет, 
+выбрал ли пользователь тёмный режим в настройках своей операционной системы или браузера.
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --black: #3b434e;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  color: var(--black);
+  background: var(--background);
+  font-family: var(--font-noto-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+ставит перед собой цель информировать браузер, что сайт поддерживает тёмную тему. Это свойство color-scheme: dark сообщает браузеру, что ваш сайт имеет стили для тёмного режима, 
+и браузер может автоматически адаптировать некоторые нативные элементы под этот режим.
+Свойство color-scheme является индикатором, который позволяет браузеру знать, какие темы (светлая или тёмная) поддерживаются на сайте. 
+*/
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,22 @@
+.h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35.41px;
+}
+
+.h2 {
+font-family: Noto Sans;
+font-size: 22px;
+font-weight: 500;
+line-height: 29.96px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.h3 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 35.41px;
+}
