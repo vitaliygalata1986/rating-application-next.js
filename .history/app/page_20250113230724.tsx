@@ -50,40 +50,7 @@ export default function Home() {
 
   return (
     <>
-      <Htag tag='h1'>{counter}</Htag>
-      <Button
-        appearance='primary'
-        arrow='right'
-        className='btn-primary'
-        onClick={() => setCounter((state) => (state += 1))}
-      >
-        Узнать подробнее
-      </Button>
-      <Button appearance='gost' arrow='down'>
-        Узнать подробнее
-      </Button>
-      <Paragraph size='big'>Текст</Paragraph>
-      <Paragraph size='small'>Текст</Paragraph>
-      <Paragraph>Текст</Paragraph>
-      <Tag size='small' href='https://google.com'>
-        text
-      </Tag>
-      <Tag size='medium' href='https://google.com'>
-        text
-      </Tag>
-      <Tag size='medium' color='grey'>
-        text
-      </Tag>
-      <Tag size='medium' color='green'>
-        text
-      </Tag>
-      <Tag color='red' href='https://google.com'>
-        text
-      </Tag>
-      <Tag size='medium' color='primary' href='https://google.com'>
-        text
-      </Tag>
-      <Rating rating={rating} isEditable setRating={setRating} />
+
     </>
   );
 }
