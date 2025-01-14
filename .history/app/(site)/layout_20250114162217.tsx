@@ -1,6 +1,3 @@
-import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
-import Sidebar from '@/components/Sidebar/Sidebar';
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
 import '../globals.css';
@@ -25,12 +22,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${noto_sans.variable}`}>
-        <Header />
-        <main>
-          <Sidebar />
-          <div>{children}</div>
-        </main>
-        <Footer />
+       <Header/>
+       <main>
+          <Sidebar/>
+          <></>
+       </main>
+        {children}
       </body>
     </html>
   );

@@ -1,6 +1,3 @@
-import Footer from '@/components/Footer/Footer';
-import Header from '@/components/Header/Header';
-import Sidebar from '@/components/Sidebar/Sidebar';
 import type { Metadata } from 'next';
 import { Noto_Sans } from 'next/font/google';
 import '../globals.css';
@@ -30,7 +27,6 @@ export default function RootLayout({
           <Sidebar />
           <div>{children}</div>
         </main>
-        <Footer />
       </body>
     </html>
   );

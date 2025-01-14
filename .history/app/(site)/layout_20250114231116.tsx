@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import type { Metadata } from 'next';
@@ -30,7 +29,7 @@ export default function RootLayout({
           <Sidebar />
           <div>{children}</div>
         </main>
-        <Footer />
+        <Header />
       </body>
     </html>
   );
