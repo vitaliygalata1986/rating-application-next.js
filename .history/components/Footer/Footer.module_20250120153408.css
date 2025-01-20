@@ -1,0 +1,6 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primary);
+  padding: 25px 30px;
+}

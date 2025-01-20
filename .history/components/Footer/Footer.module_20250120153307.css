@@ -1,0 +1,6 @@
+.footer {
+  display: grid;
+  grid
+  background-color: var(--primary);
+  padding: 25px 30px;
+}
